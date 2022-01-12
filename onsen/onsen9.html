@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント</title>
+    <link rel="stylesheet" href="../css/onsen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+    </div>
+
+    <div class="Button">
+        <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+    </div>
+
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
+        <h2>志戸平温泉</h2>
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/onsen/志戸平温泉.jpg" alt="志戸平温泉">
+            <img src="../img/onsen/志戸平温泉2.jpg" alt="志戸平温泉">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>花巻温泉郷の中でも、名湯秘湯が集中する豊沢川流域入口に位置する温泉地。清流を</p>
+                <p>見下ろす渓谷の立地に、大型ホテル、高級旅館とそれぞれ趣きが異なる2軒の湯宿が立ち</p>
+                <p>並ぶ。古くから山あいの閑静な湯治場として知られてきたが、現在は様々なレジャーを</p>
+                <p>楽しめる。湯浴みをすれば、眼の前には四季折々の渓谷美がパノラマのように雄大に広がる。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    温泉・宿</p>
+                <p>所在地<br>
+                    岩手県花巻市湯口志戸平２７－１</p>
+                <p>電話番号<br>
+                    0193-25-2011</p>
+            </div>
+        </div>
+                    <div class = "map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.318146017516!2d141.0109304153657!3d39.41692967949392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f65d125c8ab15%3A0x8a4e2839ccb51d9!2z44CSMDI1LTAyNDQg5bKp5omL55yM6Iqx5be75biC5rmv5Y-j5b-X5oi45bmz77yS77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1638924360407!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>        
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>盛岡IC → 【車35分】温泉</p>
+            <p>盛岡駅 → 【電車70分】温泉</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        © 2021 Iwanabi <br>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+
+</body>
+
+</html>

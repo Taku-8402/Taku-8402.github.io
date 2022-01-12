@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント</title>
+    <link rel="stylesheet" href="../css/onsen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+    </div>
+
+    <div class="Button">
+        <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+    </div>
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
+        <h2>山水閣</h2>
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/onsen/山水閣.jpg" alt="">
+            <img src="../img/onsen/山水閣2.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>駅からのアクセスが良く、周辺に広がる県立自然公園の四季折々の豊かな景色を楽しめ</p>
+                <p>るのも魅力の一つ。またここ花巻市は縄文時代からの歴史的資料や旧跡も多く、詩人で</p>
+                <p>童話作家の宮沢賢治のゆかりの地としても、有名である。パワースポット巡りの地とされる</p>
+                <p>北上山地の早池峰山や白山杉もあり、四季を問わず人気。観光のあとに、温泉で疲れを</p>
+                <p>癒すことができる。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    温泉・宿</p>
+                <p>所在地<br>
+                    岩手県花巻市湯口大沢１８１</p>
+                <p>電話番号<br>
+                    0198-25-2021</p>
+            </div>
+        </div>
+                    <div class="map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.464856771224!2d141.0138716153664!3d39.43622407949114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f64465cf72ccb%3A0xd1ee5b49b5c29251!2z44CSMDI1LTAyNDQg5bKp5omL55yM6Iqx5be75biC5rmv5Y-j5aSn5rKi77yR77yY77yR!5e0!3m2!1sja!2sjp!4v1638499059788!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>花巻駅 → 【車約18分】温泉</p>
+            <p>花巻駅 → 【バス約26分】温泉</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        © 2021 Iwanabi <br>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+
+</body>
+
+</html>

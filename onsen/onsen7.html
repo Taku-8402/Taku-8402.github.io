@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント</title>
+    <link rel="stylesheet" href="../css/onsen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+    </div>
+
+    <div class="Button">
+        <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+    </div>
+
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
+        <h2>鶯宿温泉</h2>
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/onsen/鶯宿温泉.jpg" alt="鶯宿温泉">
+            <img src="../img/onsen/鶯宿温泉2.jpg" alt="鶯宿温泉">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>収容人数1000名を超える温泉リゾートホテル詩人でから、心温まる家庭的おもてなしの小さな旅館</p>
+                <p>まで約18軒の湯宿が立ち並ぶ温泉郷。地域には、日本最大級の本格的ガーデニング公園</p>
+                <p>「フラワー＆ガーデン森の風」もあり、春にはカタクリの群生地や野草を楽しみながら鴬の鳴き声を</p>
+                <p>聴くことができる。新緑や紅葉などの四季を感じながら、やすらぎのひとときを過ごすことができる。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    温泉・宿</p>
+                <p>所在地<br>
+                    岩手県岩手郡雫石町鴬宿</p>
+                <p>電話番号<br>
+                    019-695-2209</p>
+            </div>
+        </div>
+                    <div class = "map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98340.70613105746!2d140.82111069019413!3d39.62389237109129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f807a7f9bbf6f%3A0x594e7ae7d36ef12c!2z44CSMDIwLTA1NzQg5bKp5omL55yM5bKp5omL6YOh6Zur55-z55S66bSs5a6_!5e0!3m2!1sja!2sjp!4v1638751349834!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>雫石駅 → 【車12分】温泉</p>
+            <p>盛岡IC → 【車25分】 鶯宿温泉</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        © 2021 Iwanabi <br>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+
+</body>
+
+</html>
