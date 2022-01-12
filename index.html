@@ -1,3 +1,67 @@
-Hello worle
-d
+<!DOCTYPE html>
+<html lang="ja">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いわナビ_TOPページ</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+</head>
+<body>
+    <header>
+        <h1 class="title" onclick="location.href='TopPage.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="layouts/search/search.html">検索画面へ:🔍</a>
+        </div>
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script> 
+    </header>
+<div class="Slider">
+    <img src="img/Main3.jpg" width="520" height="550">
+    <img src="img/Main4.jpg" width="520" height="550">
+    <img src="img/Main5.jpg" width="520" height="550">
+</div>
+<div class="fade">
+    <img class="fade" src="img/Main5.jpg" width="100%" height="550">
+    <p>私たちは岩手の<br>
+                        自然豊かな観光スポット、<br>
+                        美味しいグルメ、<br>
+                        楽しいイベント等を紹介し、<br>
+                        それによる観光客増加を目的としています。
+</p></div><br>
+<footer>
+    <div>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="img/twitter2.jpg" width="100" height="30"></a><br>
+        ©Iwanabi 2021
+    </div>
+</footer>
+</body>
+</html>
