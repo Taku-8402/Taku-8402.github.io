@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント</title>
+    <link rel="stylesheet" href="../css/onsen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+    </div>
+
+    <div class="Button">
+        <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+    </div>
+
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
+        <h2>ホテル偕楽苑</h2>
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/onsen/ホテル偕楽苑.jpg" alt="ホテル偕楽苑">
+            <img src="../img/onsen/ホテル偕楽苑2.jpg" alt="ホテル偕楽苑">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>盛岡の奥座敷、雫石町にこんこんと湧く鶯宿温泉の宿。自然の息吹に包まれ、素朴な風情の中に</p>
+                <p>日本情緒が漂う。効能豊かな湯は開放的な大浴場と、日本庭園風の空間に造られた露天風呂とで</p>
+                <p>愉しめる。特に宿の自慢はその露天風呂。緑深き裏山の景色を眺めながら、湯にじっくりと</p>
+                <p>浸かることができる。また、獲れたての山の幸や三陸の海の幸を生かした料理は逸品揃い。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    温泉・宿</p>
+                <p>所在地<br>
+                    岩手県岩手郡雫石町鴬宿第10地割3-1</p>
+                <p>電話番号<br>
+                    019-695-2111</p>
+            </div>
+        </div>
+                    <div class = "map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.4526952034093!2d140.9274093153724!3d39.639525379462995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857fae145efc2b%3A0x130e5f34c44139b0!2z44CSMDIwLTA1NzQg5bKp5omL55yM5bKp5omL6YOh6Zur55-z55S66bSs5a6_56ys77yR77yQ5Zyw5Ymy77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1638923810383!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>盛岡駅 → 【車32分】宿</p>
+            <p>盛岡駅 → 【電車52分】宿</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        © 2021 Iwanabi <br>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+
+</body>
+
+</html>

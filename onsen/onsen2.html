@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント</title>
+    <link rel="stylesheet" href="../css/onsen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+    </div>
+
+    <div class="Button">
+        <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+        <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+    </div>
+
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
+        <h2>ホテル紫苑</h2>
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/onsen/ホテル紫苑.jpg" alt="ホテル紫苑">
+            <img src="../img/onsen/ホテル紫苑2.jpg" alt="ホテル紫苑">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>どのお部屋からも岩手山と御所湖が眺望できる宿。24時間いつでも入浴可能。大きな窓から</p>
+                <p>刻々と表情を変える景色を眺めながら湯浴みを愉しめる。大浴場の続きには岩場を配した</p>
+                <p>露天風呂が設けられ、湖畔の風がとても気持ちよい。夕食は板前が真心を込めて仕上げた</p>
+                <p>地元の旬の味覚が満載。じっくりと贅沢な味わいを堪能したい逸品だ。周辺には小岩井農場、</p>
+                <p>手づくり村、田沢湖などがあり観光の拠点にも適している。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    温泉・宿</p>    
+                <p>所在地<br>
+                    岩手県盛岡市繋字湯の舘７４－２</p>
+                <p>電話番号<br>
+                    019-689-2288</p>
+            </div>
+        </div>
+                    <div class="map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.714353212062!2d141.02338671537362!3d39.67863967945762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857855e521dfa9%3A0xec705345e6d4289!2z44CSMDIwLTAwNTUg5bKp5omL55yM55ub5bKh5biC57mL5rmv44OO6IiY77yX77yU4oiS77yS!5e0!3m2!1sja!2sjp!4v1638413153164!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>【車14分】盛岡IC　→　宿</p>
+            <p>【バス45分】盛岡駅（岩手県交通バス／繋・鶯宿線）→ 宿</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        © 2021 Iwanabi <br>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+
+</body>
+
+</html>
