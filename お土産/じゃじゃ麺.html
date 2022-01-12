@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃじゃ麺</title>
+    <link rel="stylesheet" href="../css/お土産.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+<body>
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ:🔍</a>
+        </div>
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script> 
+    </header>
+    <div class="main">
+        <h2>じゃじゃ麺</h2><br>
+        <div class="Slider">
+            <img src="../img/お土産/じゃじゃ麺/じゃじゃ麺.jpg" width="450" height="550">
+        </div>
+    </div>
+        <div class="box">
+            <div class="explan">
+                <p>盛岡じゃじゃ麺は冷麺、わんこそばと並んで盛岡三大麺として知られています。</p>
+                <p>うどんやきしめんのような独特の平たい麺に、特製の肉味噌とキュウリ、ネギなどをかけたもので、麺を</p>
+                <p>食べ終わった後は、卵と肉味噌、茹で汁をそそいでかき混ぜた「鶏蛋湯」として食べることもできます。</p>
+            </div>
+            <div class="explan2">
+                <span class="box-title">料金</span>
+                   <p>2食パックセット 1,210円</p>
+                   <p>4食セット 2,750円</p>
+                   <p>6食セット3,950円</p>
+            </div>
+        </div>
+        <footer>
+                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
+                ©Iwanabi 2021
+        </footer>   
+    </body>
+    </html>
