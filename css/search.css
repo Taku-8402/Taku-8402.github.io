@@ -1,0 +1,50 @@
+* {
+  margin:auto; padding:auto;
+}
+
+body{
+    background-image: url(../img/mokume.jpg);
+}
+header {
+  text-align: center;
+  background-color: black;
+  color:white;
+  padding:2em;
+}
+
+input{
+  margin-left: 24em ;
+  margin-top:4em;
+  width:30%;
+  padding:1em;
+  color: deeppink;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+input::-webkit-input-placeholder {
+  color: pink;
+}
+#result {
+  margin: 1em;
+}
+.item_title {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.item_excerpt {
+  background: white;
+  margin: 0.5em 2em 1em;
+  padding: 0.5em;
+  border: dashed 1px lightgray;
+  font-size: smaller;
+}
+.item_excerpt b {
+  background: pink;
+}
+.re{
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
