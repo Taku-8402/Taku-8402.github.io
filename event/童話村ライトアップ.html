@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベント・行事</title>
+    <link rel="stylesheet" href="../css/イベント・行事.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.center').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+        </div>
+
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    
+    </header>
+
+    <div class="main"> 
+
+        <div class="line">
+        <h2>童話村ライトアップ</h2>
+        </div>
+
+        <div class="center"> 
+            <img src="../img/イベント・行事/童話村ライトアップ1.jpg" alt="童話村の森ライトアップ">
+            <img src="../img/イベント・行事/童話村ライトアップ2.jpg" alt="童話村の森ライトアップ">
+            <img src="../img/イベント・行事/童話村ライトアップ3.jpg" alt="童話村の森ライトアップ">
+        </div>
+
+        <div class="box">
+            <div class="explan"> 
+                <p>宮沢賢治の作品の世界感が楽しめる夜の童話村に、光と自然が織りなす賢治の</p>
+                <p>作品世界が出現。色とりどりの発光ダイオード（ＬＥＤ）ライトが闇を照らし</p>
+                <p>「どんぐりと山猫」「銀河鉄道の夜」などの情景を演出する。芝生広場にある</p>
+                <p>高さ４メートル程のどんぐりオブジェが人気を集めている。テイクアウトの屋</p>
+                <p>台村が出店するほか、同施設内の「賢治の学校」の開園時間が延長されます。</p>
+            </div>
+
+            <div class="explan2"> 
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    イベント</p>
+                <p>所在地<br>
+                    岩手県花巻市花城町9番30号</p>
+                <p>電話番号<br>
+                    0198-24-2111</p>
+                <p>営業日<br>
+                    8月10日～8月13日、8月27日～9月21日</p>
+            </div>
+
+        </div>
+
+        <div class="map">             
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.1667101650296!2d141.16687941536514!3d39.39773427949651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f5e2081fc1431%3A0x619c00c6ab3cc2c6!2z5a6u5rKi6LOi5rK756ul6Kmx5p2R!5e0!3m2!1sja!2sjp!4v1637115706445!5m2!1sja!2sjp"
+         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> 
+            <p>新花巻駅から車で3分、花巻駅から車で15分</p>
+            <p>JR新花巻駅よりバスで2分（JR花巻駅よりバスで17分）、土沢線｢賢治記念館口｣</p>
+            <p>バス停下車後徒歩5分</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+            <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
+            © Iwanabi 2021
+        </div>
+    </footer>
+
+</body>
+
+</html>

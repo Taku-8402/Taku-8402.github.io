@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント・行事</title>
+    <link rel="stylesheet" href="../css/イベント・行事.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.center').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <span><h1 class="title" onclick="location.href='../index.html'">いわナビ</h1></span>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+        </div>
+
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="line">
+        <h2>遠野まつり</h2>
+        </div>
+        <div class="center"> <!--↓タイトル画像-->
+            <img src="../img/イベント・行事/遠野まつり1.jpg" alt="遠野まつり">
+            <img src="../img/イベント・行事/遠野まつり2.jpg" alt="遠野まつり">
+            <img src="../img/イベント・行事/遠野まつり3.jpg" alt="遠野まつり">
+            <img src="../img/イベント・行事/遠野まつり4.jpg" alt="遠野まつり">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>遠野まつりでは毎年60以上の団体が集い、自然と人との密接な関わりを表現</p>
+                <p>する「しし踊り」や、五穀豊穣を祈る「田植踊」など、遠野の歴史ある芸能の</p>
+                <p>数々が披露されます。他にも「南部ばやし」、「さんさ踊り」、「神楽」など</p>
+                <p>が色鮮やかな衣装を纏って踊られ、神輿が繰り出し、遠野郷八幡宮境内の馬場</p>
+                <p>では流鏑馬が奉納され、その賑わいと華やかさはまさに「芸術の祭典」です。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    行事</p>
+                <p>所在地<br>
+                    遠野市遠野駅周辺・遠野郷八幡宮</p>
+                <p>電話番号<br>
+                    0198-62-2111</p>
+                <p>営業日<br>
+                    毎年9月第3土・日曜日</p>
+            </div>
+        </div>
+
+        <div class="map"> 
+                    <!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.597333057257!2d141.5432147145755!3d39.34270767950439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f85fbbeb27f6981%3A0xbdc09a283d2a00a1!2z6YGg6YeO6YO35YWr5bmh5a6u!5e0!3m2!1sja!2sjp!4v1638238983929!5m2!1sja!2sjp"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>東北自動車道	浦和IC→盛岡IC	6時間30分</p>
+            <p>八戸自動車道	八戸IC→盛岡IC	1時間30分</p>
+            <p>秋田自動車道	秋田IC→北上江釣子IC	1時間30分</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <div>
+            <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+            <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
+            © Iwanabi 2021
+        </div>
+    </footer>
+
+</body>
+
+</html>
