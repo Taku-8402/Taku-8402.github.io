@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いわて短角牛</title>
+    <link rel="stylesheet" href="../css/グルメ詳細.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+        </div>
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    </header>
+
+    <div class="main"> 
+        <h2>いわて短角牛</h2>
+        <div class="Slider"> 
+            <img src="../img/グルメ/いわて短角牛.jpg" width="450" height="350">
+        </div>
+
+        <div class="ex">
+            <div class="explan"> 
+                <p>脂肪分が少ないヘルシーな赤身肉で、とろけ</p>
+                <p>るような霜降りとはまったく違う、かみしめ</p>
+                <p>る食感と肉の旨さを味わう牛肉です。赤身が</p>
+                <p>多いから量を食べても飽きがこない旨味が</p>
+                <p>特徴です。</p>
+            </div>
+
+            <div class="tbl">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>所在地</th>
+                            <td>盛岡市菜園1-4-10 第ニ産業会館１階</td>
+                        </tr><br>
+                        <tr>
+                            <th>電話番号</th>
+                            <td> 019-606-3739</td>
+                        </tr><br>
+                        <tr>
+                           <th> 営業時間</th>
+                           <td>月～土、祝前日 <br>
+                            11:30～14:00
+                            17:00～22:00</td>
+                        </tr><br>
+                        <tr>
+                            <th>定休日</th>
+                            <td>日曜日、祝日</td>
+                        </tr>
+                    </tbody>
+                </table><br> 
+            </div>
+            </div><br>
+            <div class="access">
+                <h2>[アクセス経路]</h2>
+                <p>ルート1:盛岡駅 → 【徒歩15分】 銀河離宮</p>
+                <p>ルート2:盛岡IC → 【車20分】 銀河離宮</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.693353977879!2d141.14705621473746!3d39.70159810674502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f85762f7f8921b3%3A0x391cc83ab4603f76!2z6YqA5rKz6Zui5a6u!5e0!3m2!1sja!2sjp!4v1638241910056!5m2!1sja!2sjp" 
+                width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+            </div>
+        </div><br>
+        <footer>
+            <div>
+                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
+                © Iwanabi 2021
+            </div>      
+        </footer>
+    </body>
+    </html>
