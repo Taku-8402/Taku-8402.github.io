@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>イベント・行事</title>
+    <link rel="stylesheet" href="../css/イベント・行事.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.center').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <span><h1 class="title" onclick="location.href='../index.html'">いわナビ</h1></span>
+        <div class="btn btn01">
+            <a href="../layouts/search/search.html">検索画面へ🔍</a>
+        </div>
+
+        <div class="Button">
+            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
+            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
+        </div>
+        <script>
+            $(function(){
+                $('.btncolor').on('click', function(event){
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    
+    </header>
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="line">
+        <h2>小岩井農場の紅葉</h2>
+        </div>
+        <div class="center"> <!--↓タイトル画像-->
+            <img src="../img/イベント・行事/小岩井農場の紅葉1.jpg" alt="小岩井農場の紅葉">
+            <img src="../img/イベント・行事/小岩井農場の紅葉2.jpg" alt="小岩井農場の紅葉">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>100年以上の歴史を持ち、民間農場としては我が国唯一の総合農場として称</p>
+                <p>されている小岩井農場。例年10月下旬に紅葉がピークを迎え、11月上旬まで</p>
+                <p>色づく木々と農場の風景を見ることができます。毎日開催されている非公開の</p>
+                <p>森林エリアを巡る「ファームトラクターライド」や、季節ごとに行われるウォ</p>
+                <p>ークイベントなど、自然を楽しめるツアーもあります。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    イベント</p>
+                <p>所在地<br>
+                    岩手県岩手郡雫石町丸谷地36-1小岩井農場　まきば園</p>
+                <p>電話番号<br>
+                    019-692-4321</p>
+                <p>営業日<br>
+                    10月末</p>
+            </div>
+        </div>
+
+        <div class="map">
+                    <!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.5066780186116!2d141.01512211428087!3d39.750730979448065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8570f4d84be32f%3A0xe575bb75ee19826a!2z5bCP5bKp5LqV6L6y5aC0!5e0!3m2!1sja!2sjp!4v1638157047907!5m2!1sja!2sjp"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>東北自動車道　盛岡ICより約15分（12㎞）</p>
+            <p>JR盛岡駅前「10番」乗場より「小岩井農場まきば園行き」バス乗車（約17km 約35分）</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <div>
+            <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+            <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
+            © Iwanabi 2021
+        </div>
+    </footer>
+
+</body>
+
+</html>
