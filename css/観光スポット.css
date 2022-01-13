@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/観光スポット/観光スポット一覧背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: black;
+    -webkit-text-stroke: 1px yellow;
+    position: absolute;
+    font: xx-large;
+    left:1em;
+    top:1em;
+}
+
+h1.title:hover{
+    color: gray;
+}
+
+/* 検索ボタン*/
+.btn a {
+    right:35px;
+    top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn a:hover {
+    color: #F2F2F2;
+}
+
+.btn01 a {
+    background-color: #00E5FF;
+    border: 1px solid #000000;
+    border-radius: 35px;
+}
+
+.btn01 a:hover {
+    background-color: #2800B9;
+    border: 1px solid #333;
+}
+
+.btn01 a::before {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 12px;
+    height: 1px;
+    background-color: #333;
+}
+
+.btn01 a::after {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background-color: #333;
+}
+
+
+/*ここまで*/
+
+.Button{
+    display: flex;
+    margin: 0px 300px;
+    position: relative;
+    top: 8em;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+button.btncolor:hover{
+    background-color: gray;
+
+}
+
+.btncolor.active{
+    background-color: gray
+}
+
+div.main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+div.main h2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+div.main img{
+    width:100%;
+    height:450px;
+    object-fit: cover;
+}
+
+div.center {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ex{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 90px;
+}
+
+.explan{
+    position: absolute;
+    left: 170px;
+}
+
+.explan p{
+    line-height: 2;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.explan2 {
+    margin-top: 20px;
+}
+
+.explan2 p{
+    display: -ms-flexbox;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    width: 100%;
+}
+
+table{
+    position: absolute;
+    top: 800px;
+    right: 150px;
+}
+
+th,td{
+    text-align: left;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+td{
+    border-bottom: solid 2px black;
+}
+
+
+/*アクセス経路*/
+div.access{
+    margin-top: 180px;
+}
+
+div.access p{
+    font-size: large;
+    margin-top: 25px;
+    border-bottom: 2px solid #000;
+}
+
+/*マップ*/
+.main iframe{
+    display: block;
+    clear:both;
+}
+
+footer{
+    height: 150px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 70px;
+}

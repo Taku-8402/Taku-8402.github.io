@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/souvenir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+    -webkit-text-stroke: 1px yellow;
+    position: absolute;
+    font: xx-large;
+    left:1em;
+    top:1em;
+}
+
+h1.title:hover{
+    color: gray;
+}
+
+/* 検索ボタン*/
+.btn a {
+    right:35px;
+    top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn a:hover {
+    color: #F2F2F2;
+}
+
+.btn01 a {
+    background-color: #00E5FF;
+    border: 1px solid #000000;
+    border-radius: 35px;
+}
+
+.btn01 a:hover {
+    background-color: #2800B9;
+    border: 1px solid #333;
+}
+
+.btn01 a::before {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 12px;
+    height: 1px;
+    background-color: #333;
+}
+
+.btn01 a::after {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background-color: #333;
+}
+
+
+/*ここまで*/
+
+.Button{
+    display: flex;
+    margin: 0px 300px;
+    position: relative;
+    top: 8em;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+button.btncolor:hover{
+    background-color: gray;
+
+}
+
+.btncolor.active{
+    background-color: gray
+}
+
+div.main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+/*詳細*/
+div.box {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 90px;
+}
+
+div.explan p{
+    border-bottom: 2px solid rgb(95, 95, 95);
+    margin: 1.5em;
+}
+
+.explan2 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.7em 1em;
+    border: solid 3px lime;
+    border-radius: 8px;
+    width: 21%;
+    height: 20%;
+    text-align: left;
+} 
+
+.explan2 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: lime;
+    font-weight: bold;
+}
+
+.explan2 p {
+    margin: 0; 
+    padding: 0;
+}
+/*---------------------------------*/
+
+/*詳細
+div.ex {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 90px;
+}
+
+div.explan p{
+    line-height: 2;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+}
+/*
+div.explan2 {
+    margin-top: 20px;
+}
+
+div.explan2 p{
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+}
+/*---------------------------------*/
+
+/*.ex{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 90px;
+}
+
+.explan{
+    position: absolute;
+    left: 170px;
+}
+
+.explan p{
+    line-height: 2;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+*/
+
+/*table{
+    position: absolute;
+    top: 129%;
+    right: 16%;
+}
+
+th{
+    font-size: 30px;
+}
+
+td{
+    text-align: left;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+td{
+    border-bottom: solid 2px black;
+}
+*/
+
+footer{
+    width: 100%;
+    height: 150px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 70px;
+}
