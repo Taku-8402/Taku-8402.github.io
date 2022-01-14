@@ -34,7 +34,7 @@ header h1{
 header h1.title:hover{
     color: rgb(0, 238, 255);
 }
-
+/* 検索ボタン */
 .btn a {
     right:35px;
     top:40px;
@@ -89,7 +89,7 @@ header h1.title:hover{
 .conditionsbtn {
     width:100%;
 }
-
+/* メニューバー */
 .menu{
     text-align: center;
     width: 100%;
