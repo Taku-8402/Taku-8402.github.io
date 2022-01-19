@@ -22,24 +22,39 @@
 <body>
     <header>
         <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
-        <div class="btn btn01">
-            <a href="../layouts/search/search.html">検索画面へ:🔍</a>
-        </div>
-        <div class="Button">
-            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
-        </div>
-        <script>
-            $(function(){
-                $('.btncolor').on('click', function(event){
-                    event.preventDefault();
-                    $(this).toggleClass('active');
-                });
+        
+        <form>
+            <input id="searchKeyword" type="search" size="15" placeholder="キーワード">
+            <input id="searchButton" type="submit" value="検索">
+        </form>
+          
+          <script>
+          const SEARCH_URL = '../layouts/search/search.html';
+          
+          window.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.getElementById('searchButton');
+            const searchKeyword = document.getElementById('searchKeyword');
+          
+            // 検索ボタンのクリックで検索ページへジャンプ
+            searchButton.addEventListener('click', e => {
+              e.preventDefault();  // Prevent default form's behavior
+              const query = searchKeyword.value;
+              const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+              location.href = url;
             });
-        </script> 
+          });
+          </script>
+
+        <div class="menu">
+            <ul>
+            <li><a href="../項目一覧/sightseeing.html">観光スポット</a></li>
+            <li><a href="../項目一覧/gourmet.html">グルメ</a></li>
+            <li><a href="../項目一覧/listevent.html">イベント・行事</a></li>
+            <li><a href="../項目一覧/onsenlist.html">温泉・宿</a></li>
+            <li><a href="../項目一覧/souvenir.html">お土産</a></li>
+            </ul>
+        </div>
+
     </header>
     <div class="main">
         <h2>かもめの玉子</h2><br>
@@ -74,9 +89,10 @@
             </div>
         </div>-->
         <footer>
-                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
-                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
-                ©Iwanabi 2021
+            <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a><br>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            ©Iwanabi 2021
         </footer>   
     </body>
     </html>
