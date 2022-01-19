@@ -5,7 +5,9 @@
     padding: auto;
 }
 
+/*--------------ヘッダー-----------------*/
 header{
+    position: relative;
     width: 100%;
     height: 200px;
     background: linear-gradient(rgb(255, 180, 110), blue);
@@ -19,6 +21,7 @@ header{
     border-left: transparent;
 }
 
+
 header h1{
     color: rgb(255, 255, 255);
     position: absolute;
@@ -31,6 +34,8 @@ header h1{
 header h1.title:hover{
     color: rgb(0, 238, 255);
 }
+
+/* ここまで */
 
 
 /* 検索ボタン*/
@@ -64,7 +69,6 @@ form{
     border-color: hotpink;
 }
 
-
 /*ここまで*/
 
 /* メニューバー */
@@ -92,12 +96,13 @@ li {
     border-left: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);
   }
-  li+ li {  
+
+ li+ li {  
     border-left: 0;
     border-right: 2px solid rgb(255, 255, 255);
   }
 
-
+/* ここまで　*/
 
 body {
     background-color: white;
