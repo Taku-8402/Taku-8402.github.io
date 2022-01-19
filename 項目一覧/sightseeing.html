@@ -42,33 +42,7 @@
             <li><a href="souvenir.html">お土産</a></li>
             </ul>
         </div>
-
-        <script>
-            const SEARCH_URL = '../layouts/search/search.html';
             
-            window.addEventListener('DOMContentLoaded', () => {
-              const searchButton = document.getElementById('searchButton');
-              const searchKeyword = document.getElementById('searchKeyword');
-            
-              // 検索ボタンのクリックで検索ページへジャンプ
-              searchButton.addEventListener('click', e => {
-                e.preventDefault();  // Prevent default form's behavior
-                const query = searchKeyword.value;
-                const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
-                location.href = url;
-              });
-            });
-            </script>
-            
-            <div class="menu">
-                <ul>
-                <li><a href="sightseeing.html">観光スポット</a></li>
-                <li><a href="gourmet.html">グルメ</a></li>
-                <li><a href="listevent.html">イベント・行事</a></li>
-                <li><a href="onsenlist.html">温泉・宿</a></li>
-                <li><a href="souvenir.html">お土産</a></li>
-                </ul>
-            </div>
     </header>
 
     
