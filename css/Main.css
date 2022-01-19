@@ -10,6 +10,7 @@ header{
     position: relative;
     width: 100%;
     height: 200px;        /*↓ヘッダー画像*/
+
     background: linear-gradient(rgb(255, 180, 110), blue);
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,6 +68,16 @@ form{
     border-color: hotpink;
 }
 
+#searchButton:hover{
+    background-color: grey;
+}
+
+#searchKeyword{
+    height: 2em;
+    border-radius: 5px;
+    border:1px solid;
+    border-color: hotpink;
+}
 /*ここまで*/
 
 /* メニューバー */
@@ -94,12 +105,10 @@ li {
     border-left: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);
   }
-li+ li {  
+  li+ li {  
     border-left: 0;
     border-right: 2px solid rgb(255, 255, 255);
   }
-
-/* ここまで　*/
 
 .fade {
     color: white;
