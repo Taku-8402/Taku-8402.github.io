@@ -80,6 +80,7 @@ form{
     font-size: 18px;
     font-weight: 900;
     transition: 0.3s;
+    text-decoration: none;
 }
 .menu a:hover{
     color: rgb(116, 235, 205);
