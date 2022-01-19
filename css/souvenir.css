@@ -9,7 +9,7 @@
 header{
     position: relative;
     width: 100%;
-    height: 200px;        /*↓ヘッダー画像*/
+    height: 200px;
     background: linear-gradient(rgb(255, 180, 110), blue);
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,8 @@ header{
     border-left: transparent;
 }
 
-header h1 {
+
+header h1{
     color: rgb(255, 255, 255);
     position: absolute;
     font: xx-large;
@@ -95,7 +96,8 @@ li {
     border-left: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);
   }
-li+ li {  
+
+ li+ li {  
     border-left: 0;
     border-right: 2px solid rgb(255, 255, 255);
   }
