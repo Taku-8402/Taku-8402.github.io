@@ -8,79 +8,102 @@
     <title>ジンギスカン</title>
     <link rel="stylesheet" href="../css/グルメ詳細.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
 </head>
 
 <body>
     <header>
         <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
-        <div class="btn btn01">
-            <a href="../layouts/search/search.html">検索画面へ🔍</a>
-        </div>
-        <div class="Button">
-            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
-        </div>
-        <script>
-            $(function(){
-                $('.btncolor').on('click', function(event){
-                    event.preventDefault();
-                    $(this).toggleClass('active');
-                });
+
+        <form>
+            <input id="searchKeyword" type="search" size="15" placeholder="キーワード">
+            <input id="searchButton" type="submit" value="検索">
+        </form>
+          
+          <script>
+          const SEARCH_URL = '../layouts/search/search.html';
+          
+          window.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.getElementById('searchButton');
+            const searchKeyword = document.getElementById('searchKeyword');
+          
+            // 検索ボタンのクリックで検索ページへジャンプ
+            searchButton.addEventListener('click', e => {
+              e.preventDefault();  // Prevent default form's behavior
+              const query = searchKeyword.value;
+              const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+              location.href = url;
             });
-        </script>
+          });
+          </script>
+
+        <div class="menu">
+            <ul>
+            <li><a href="../項目一覧/sightseeing.html">観光スポット</a></li>
+            <li><a href="../項目一覧/gourmet.html">グルメ</a></li>
+            <li><a href="../項目一覧/listevent.html">イベント・行事</a></li>
+            <li><a href="../項目一覧/onsenlist.html">温泉・宿</a></li>
+            <li><a href="../項目一覧/souvenir.html">お土産</a></li>
+            </ul>
+        </div>
+
     </header>
 
-    <div class="main"> 
+    <div class="main"> <!--↓タイトル-->
+        <div class="tname">
         <h2>ジンギスカン</h2>
-        <div class="Slider"> 
-            <img src="../img/グルメ/ジンギスカン.jpg" width="450" height="350">
+        </div>
+        <div class="Slider"> <!--↓タイトル画像-->
+            <img src="../img/グルメ/ジンギスカン.jpg"  width="450" height="350" >
         </div>
 
-        <div class="ex">
-            <div class="explan">
-                <p>遠野のジンギスカンは、羊肉を柔らかジュー</p>
-                <p>シーに焼きあげてからタレを付けるのが特徴</p>
-                <p>です。</p>
-            </div>
 
-            <div class="tbl"> 
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>所在地</th>
-                            <td>遠野市早瀬町２丁目４−１２</td>
-                        </tr><br>
-                        <tr>
-                            <th>電話番号</th>
-                            <td> 0198-62-4077</td>
-                        </tr><br>
-                        <tr>
-                            <th>営業時間</th>
-                            <td>月・水～日<br>
-                            9:00～17:00</td>
-                        </tr>
-                    </tbody>
-                </table><br>
+    <div class="box">
+        <div class="explan"> <!--↓タイトルの詳細-->
+            <p>遠野のジンギスカンは、羊肉を柔らかジューシーに焼きあげてからタレを付けるのが特徴です。</p>
+            <p>鍋の中央が山のように膨らんでいるジンギスカン鍋を使って食べられるため</p>
+            <p>鍋料理と思われがちですが、実際は鉄板料理のように調理されます。</p>
+        </div>
+
+        <div class="explan2"> <!--↓タイトルの詳細-->
+            <h3>グルメ情報</h3>
+            <p>ジャンル<br>
+                グルメ</p>
+            <p>所在地<br>
+                遠野市早瀬町2丁目4-12</p>
+            <p>電話番号<br>
+                0198-62-4077</p>
+            <p>営業時間<br>
+                月・水～日 9:00～17:00</p>
+        </div>
+    </div>
+            <div class="map"><!--↓マップURL-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.39977330232!2d141.13988071537446!3d39.70819757945376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857639ad84de0f%3A0x283279946ea4c4f0!2z44CSMDIwLTAwNjIg5bKp5omL55yM55ub5bKh5biC6ZW355Sw55S677yR77yS4oiS77yR77yRIOemj-eUsOODkeODsw!5e0!3m2!1sja!2sjp!4v1638407342870!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            </div><br>
-            <div class="access">
-                <h2>[アクセス経路]</h2>
-                <p>ルート1:【車】遠野IC~あんべ 約5分 花巻IC~あんべ 約60分</p>
-                <p>ルート2:【電車】 JR花巻駅~JR遠野駅 (JR釜石線 約60分 徒歩 12分)</p><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.8959389208535!2d141.52313131472482!3d39.33594312858055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f85fbdb92443cff%3A0x85c31ccb4e1dea92!2z44K444Oz44Ku44K544Kr44Oz44Gu44GC44KT44G5!5e0!3m2!1sja!2sjp!4v1638240281939!5m2!1sja!2sjp" 
-                width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div><br>
-        <footer>
-            <div>
-                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
-                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
-                © Iwanabi 2021
-            </div>  
-                
-        </footer>
-    </body>
-    </html>
+    <div class="explan3">
+        <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+        <p>ルート1:【車】遠野IC~あんべ 約5分 花巻IC~あんべ 約60分</p>
+        <p>ルート2:【電車】 JR花巻駅~JR遠野駅 (JR釜石線 約60分 徒歩 12分)</p><br>
+    </div>
+
+</div>
+
+<!--フッター-->
+<footer>
+    <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+    © Iwanabi 2021
+</footer>
+</body>
+</html>
