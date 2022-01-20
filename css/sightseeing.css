@@ -10,7 +10,7 @@ header{
     position: relative;
     width: 100%;
     height: 200px;
-    background: linear-gradient(rgb(255, 180, 110), blue);
+    background: linear-gradient(rgb(0, 187, 31), rgb(107, 107, 107));
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -63,8 +63,6 @@ form{
     border-radius: 5px;
     border:1px solid;
     border-color: hotpink;
-}
-
 }
 
 #searchKeyword{
@@ -144,14 +142,31 @@ a{
     text-align: center;
     border: solid 5px #039127b8;
     border-radius: 10px;
+    font-weight: 900;
 }
 
+.box2 a{
+    color: blue;
+    transition: 0.3s;
+}
+
+.box2 a:hover{
+    color: rgb(255, 123, 0);
+    text-decoration: underline;
+}
+
+.box2 img{
+    border: 1px solid;
+}
+
+.box2 p{
+    margin-top: 1.5em;
+}
 footer {
-    height: 150px;
-    color:white;
-    background: linear-gradient(limegreen,green);
+    height: 50px;
     text-align: center;
-    line-height: 70px;
+    padding: 30px;
+    background: linear-gradient(rgb(134, 204, 145), rgb(48, 121, 0));
     clear:both;
-    margin: 0 auto;
+    color:white 
   }

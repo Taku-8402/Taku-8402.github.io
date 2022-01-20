@@ -8,7 +8,7 @@
 header{
     width: 100%;
     height: 200px;
-    background: linear-gradient(rgb(255, 180, 110), blue);
+    background: linear-gradient(rgb(0, 187, 31), rgb(107, 107, 107));
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -194,7 +194,7 @@ footer {
     height: 50px;
     text-align: center;
     padding: 30px;
-    background: linear-gradient(skyblue, blue);
+    background: linear-gradient(rgb(134, 204, 145), rgb(48, 121, 0));
     clear:both;
     color:white 
   }

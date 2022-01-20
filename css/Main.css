@@ -11,7 +11,7 @@ header{
     width: 100%;
     height: 200px;        /*↓ヘッダー画像*/
 
-    background: linear-gradient(rgb(255, 180, 110), blue);
+    background: linear-gradient(rgb(0, 187, 31), rgb(107, 107, 107));
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -140,10 +140,11 @@ to {
 }
 }
 
-footer{
-    height: 150px;
-    color: white;
-    background-color: black;
+footer {
+    height: 50px;
     text-align: center;
-    line-height: 70px;
-}
+    padding: 30px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 187, 31));
+    clear:both;
+    color:white 
+  }
