@@ -65,13 +65,6 @@ form{
     border-color: hotpink;
 }
 
-#searchKeyword{
-    height: 2em;
-    border-radius: 5px;
-    border:1px solid;
-    border-color: hotpink;
-}
-
 /* メニューバー */
 .menu{
     text-align: center;

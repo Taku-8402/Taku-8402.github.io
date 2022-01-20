@@ -9,78 +9,99 @@
     <title>雫石牛</title>
     <link rel="stylesheet" href="../css/グルメ詳細.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
 </head>
 
 <body>
     <header>
         <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
-        <div class="btn btn01">
-            <a href="../layouts/search/search.html">検索画面へ🔍</a>
-        </div>
-        <div class="Button">
-            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
-        </div>
-        <script>
-            $(function(){
-                $('.btncolor').on('click', function(event){
-                    event.preventDefault();
-                    $(this).toggleClass('active');
-                });
+
+        <form>
+            <input id="searchKeyword" type="search" size="15" placeholder="キーワード">
+            <input id="searchButton" type="submit" value="検索">
+        </form>
+          
+          <script>
+          const SEARCH_URL = '../layouts/search/search.html';
+          
+          window.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.getElementById('searchButton');
+            const searchKeyword = document.getElementById('searchKeyword');
+          
+            // 検索ボタンのクリックで検索ページへジャンプ
+            searchButton.addEventListener('click', e => {
+              e.preventDefault();  // Prevent default form's behavior
+              const query = searchKeyword.value;
+              const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+              location.href = url;
             });
-        </script>
+          });
+          </script>
+
+        <div class="menu">
+            <ul>
+            <li><a href="../項目一覧/sightseeing.html">観光スポット</a></li>
+            <li><a href="../項目一覧/gourmet.html">グルメ</a></li>
+            <li><a href="../項目一覧/listevent.html">イベント・行事</a></li>
+            <li><a href="../項目一覧/onsenlist.html">温泉・宿</a></li>
+            <li><a href="../項目一覧/souvenir.html">お土産</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <div class="main">
+        <div class="tname">
         <h2>雫石牛</h2>
+        </div>
         <div class="Slider">
             <img src="../img/グルメ/雫石牛.jpg" width="450" height="350">
         </div>
 
-        <div class="ex">
+        <div class="box">
             <div class="explan"> 
-                <p>農家が長年試行錯誤を重ね、磨き抜かれた飼</p>
-                <p>養技術で育て上げられた黒毛和牛。その中で</p>
-                <p>も枝肉格付けランクＡ４・Ａ５の上物のみ厳</p>
-                <p>選されたのが雫石牛。</p>
+                <p>農家が長年試行錯誤を重ね、磨き抜かれた飼養技術で育て上げられた黒毛和牛。</p>
+                <p>その中でも枝肉格付けランクA4・A5の上物のみ厳選されたのが雫石牛。</p>
             </div>
 
-            <div class="tbl">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>所在地</th>
-                            <td>岩手郡雫石町板橋68-2</td>
-                        </tr><br>
-                        <tr>
-                            <th>電話番号</th>
-                            <td> 019-692-5752</td>
-                        </tr><br>
-                        <tr>
-                            <th>営業時間</th>
-                            <td>【月〜土】 11:00～22:30(L.O.22:00) <br>
-                                【日/祝】 11:00～22:30 (L.O.22:00)</td>
-                        </tr>
-                    </tbody>
-                </table><br>
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>グルメ情報</h3>
+                <p>所在地<br>
+                    盛岡市菜園1-4-10 第ニ産業会館１階</p>
+                <p>電話番号<br>
+                    019-606-3739</p>
+                <p>営業時間<br>
+                    月～土、祝前日
+                    11:30～14:00
+                    17:00～22:00</p>
             </div>
-            </div><br>
-            <div class="access">
-                <h2>[アクセス経路]</h2>
-                <p>東北道盛岡ICから国道46号経由6km15分</p><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.724985166504!2d141.0259014147374!3d39.70088700678766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8579c0fa781f2d%3A0x6e6531f8e3187a45!2z44KE44G-44Gq44GL5a626Zur55-z5bqX!5e0!3m2!1sja!2sjp!4v1638239447012!5m2!1sja!2sjp" 
-                width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
-            </div>
-        </div><br>
-        <footer>
-            <div>
-                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
-                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
-                © Iwanabi 2021
-            </div>  
-        </footer>
+        </div>
+                <div class="map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.724985166504!2d141.0259014147374!3d39.70088700678766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8579c0fa781f2d%3A0x6e6531f8e3187a45!2z44KE44G-44Gq44GL5a626Zur55-z5bqX!5e0!3m2!1sja!2sjp!4v1638239447012!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+                        </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>東北道盛岡ICから国道46号経由6km15分</p><br>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+        © Iwanabi 2021
+    </footer>
     </body>
     </html>

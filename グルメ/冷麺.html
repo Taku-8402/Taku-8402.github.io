@@ -8,76 +8,104 @@
     <title>冷麺</title>
     <link rel="stylesheet" href="../css/グルメ詳細.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.Slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
 </head>
 
 <body>
     <header>
         <h1 class="title" onclick="location.href='../index.html'">いわナビ</h1>
-        <div class="btn btn01">
-            <a href="../layouts/search/search.html">検索画面へ🔍</a>
-        </div>
-        <div class="Button">
-            <button class="btncolor" onclick="location.href='../項目一覧/sightseeing.html'">観光スポット</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/gourmet.html'">グルメ</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/listevent.html'">イベント・行事</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/onsenlist.html'">温泉・宿</button>
-            <button class="btncolor" onclick="location.href='../項目一覧/souvenir.html'">お土産</button>
-        </div>
-        <script>
-            $(function(){
-                $('.btncolor').on('click', function(event){
-                    event.preventDefault();
-                    $(this).toggleClass('active');
-                });
+
+        <form>
+            <input id="searchKeyword" type="search" size="15" placeholder="キーワード">
+            <input id="searchButton" type="submit" value="検索">
+        </form>
+          
+          <script>
+          const SEARCH_URL = '../layouts/search/search.html';
+          
+          window.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.getElementById('searchButton');
+            const searchKeyword = document.getElementById('searchKeyword');
+          
+            // 検索ボタンのクリックで検索ページへジャンプ
+            searchButton.addEventListener('click', e => {
+              e.preventDefault();  // Prevent default form's behavior
+              const query = searchKeyword.value;
+              const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+              location.href = url;
             });
-        </script>
+          });
+          </script>
+
+        <div class="menu">
+            <ul>
+            <li><a href="../項目一覧/sightseeing.html">観光スポット</a></li>
+            <li><a href="../項目一覧/gourmet.html">グルメ</a></li>
+            <li><a href="../項目一覧/listevent.html">イベント・行事</a></li>
+            <li><a href="../項目一覧/onsenlist.html">温泉・宿</a></li>
+            <li><a href="../項目一覧/souvenir.html">お土産</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <div class="main">
+        <div class="tname">
         <h2>冷麺</h2>
+        </div>
         <div class="Slider">
-            <img src="../img/グルメ/冷麵.jpg" width="450" height="350">
+            <img src="../img/グルメ/冷麺.jpg"  width="450" height="350">
         </div>
 
-        <div class="ex">
+        <div class="box">
             <div class="explan"> 
-                <p>平壌生まれの冷麺が、盛岡に登場したのは昭</p>
-                <p>和29年頃。本場・朝鮮半島出身者がふるさと</p>
-                <p>に思いを馳せて、盛岡で冷麺を作ってみたの</p>
-                <p>が盛岡冷麺の始まりです。</p>
+                <p>生まれの冷麺が、盛岡に登場したのは昭和29年頃。本場・朝鮮半島出身者がふるさとに</p>
+                <p>思いを馳せて、盛岡で冷麺を作ってみたのが盛岡冷麺の始まりです。</p>
+                <p>盛岡冷麺の麺はコシが強く、表面はツルッと喉ごしが良いのが特徴。</p>
+                <p>スープは和食のだしにはない、コクや旨みがたっぷり。しかも冷たいスープなので</p>
+                <p>麺のコシの強さをいっそう堪能することができる。</p>
             </div>
 
-            <div class="tbl">
-                <table>
-                    <tr>
-                        <th>所在地</th>
-                        <td>盛岡市稲荷町12-5</td>
-                    </tr><br>
-                    <tr>
-                        <th>電話番号</th>
-                        <td>019-646-0541</td>
-                    </tr><br>
-                    <tr>
-                        <th>営業時間</th>
-                        <td>11:00～23:00</td>
-                    </tr>
-                </table><br> 
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>グルメ情報</h3>
+                <p>ジャンル<br>
+                    グルメ</p>
+                <p>所在地<br>
+                    盛岡市稲荷町12-5</p>
+                <p>電話番号<br>
+                    019-646-0541</p>
+                <p>営業時間<br>
+                    11:00～23:00</p>
             </div>
-            </div><br>
-            <div class="access">
-                <h2>[アクセス経路]</h2>
-                <p>ルート1:盛岡駅 → 【バス20分】 稲荷町バス停 → 【徒歩3分】 ぴょんぴょん舎　稲荷町本店</p>
-                <p>ルート2:盛岡IC → 【車5分】 ぴょんぴょん舎　稲荷町本店</p><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.3836360445416!2d141.10888021473758!3d39.708560306327726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857770e15c903b%3A0x706e20693e1937f4!2z44G044KH44KT44G044KH44KT6IiOIOeosuiNt-eUuuacrOW6lw!5e0!3m2!1sja!2sjp!4v1638240893283!5m2!1sja!2sjp" 
-                width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div><br>
-        <footer>
-            <div>
-                <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
-                <a href="https://twitter.com/share?text=おすすめWebサイトはこちら&url=http://example.com&hashtags=#sample1,#sample2"><img src="../img/twitter2.jpg" width="100" height="30"></a><br>
-                © Iwanabi 2021
-            </div>  
-        </footer>
+        </div>
+                <div class="map"><!--↓マップURL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.3836360445416!2d141.10888021473758!3d39.708560306327726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857770e15c903b%3A0x706e20693e1937f4!2z44G044KH44KT44G044KH44KT6IiOIOeosuiNt-eUuuacrOW6lw!5e0!3m2!1sja!2sjp!4v1638240893283!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>ルート1:盛岡駅 → 【バス20分】 稲荷町バス停 → 【徒歩3分】 ぴょんぴょん舎 稲荷町本店</p>
+            <p>ルート2:盛岡IC → 【車5分】 ぴょんぴょん舎　稲荷町本店</p><br>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <a href="http://line.me/R/msg/text/?シェアされます http://example.com"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="おすすめのWebサイト" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+        © Iwanabi 2021
+    </footer>
     </body>
     </html>
