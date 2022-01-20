@@ -98,8 +98,10 @@ li {
 
 body {
     background-color: white;
-    background-image: url("../img/イベント・行事/紅葉.jpg"); 
-    background-repeat: space;  
+    background-image: url("../img/イベント・行事/momiji.jpeg"); 
+    /* background-repeat: space;   */
+    background-size: contain;      
+    background-attachment: fixed  
   }
 
 .box2{
