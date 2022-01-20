@@ -145,6 +145,11 @@ body {
     color: rgb(255, 123, 0);
     text-decoration: underline;
 }
+
+.box2 p{
+    margin-top: 1.5em;
+}
+
 footer {
     height: 50px;
     text-align: center;
@@ -152,19 +157,6 @@ footer {
     background: linear-gradient(skyblue, blue);
     clear:both;
     color:white 
-  }
-
-  footer.img{
-      width: 30px;
-      height: 30px;
-  }
-
-  p{
-      margin-top: 1.5em;
-  }
-
-  img{
-      margin-top: 1em;
   }
 
   a{
