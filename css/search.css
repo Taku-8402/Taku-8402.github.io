@@ -2,9 +2,9 @@
   margin:auto; padding:auto;
 }
 
-body{
+/* body{
     background-image: url(../img/mokume.jpg);
-}
+} */
 header {
   text-align: center;
   background-color: black;
@@ -54,7 +54,7 @@ input::-webkit-input-placeholder {
   background: white;
   margin: 0.5em 2em 1em;
   padding: 0.5em;
-  border: dashed 1px lightgray;
+  border: dashed 1px rgb(0, 0, 0);
   font-size: 1em;
 }
 .item_excerpt b {
