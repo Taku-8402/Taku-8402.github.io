@@ -102,9 +102,13 @@ div.main{
     margin: auto;
 }
 
+div.tname{
+    border-bottom: 2px solid rgb(0, 174, 255);
+    margin: 1.5em;
+}
+
 div.main h2{
     margin-top: 50px;
-    font-size: 30px;
 }
 
 div.main img{
@@ -118,76 +122,60 @@ div.center {
     text-align: center;
 }
 
-.ex{
+div.box {
     display: flex;
     justify-content: space-around;
     margin: 40px auto 90px;
 }
 
-.explan{
-    position: absolute;
-    left: 170px;
+div.explan p{
+    font-family: メイリオ;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    margin: 1.5em;
 }
 
-.explan p{
-    line-height: 2;
-    font-size: 20px;
-    border-bottom: 2px solid #000;
-    width: 100%;
+div.explan2 {
+    margin-top: 0.3em;
 }
 
-.explan2 {
-    margin-top: 20px;
+div.explan2 p{
+    margin-top: 0.5em;
+    border-bottom: 1px solid rgb(118, 118, 118);
 }
 
-.explan2 p{
-    display: -ms-flexbox;
-    border-bottom: 2px solid #000;
-    font-size: 20px;
-    width: 100%;
-}
-
-table{
-    position: absolute;
-    top: 800px;
-    right: 150px;
-}
-
-th,td{
-    text-align: left;
-    font-size: 20px;
-    padding: 5px 10px;
-}
-
-td{
-    border-bottom: solid 2px black;
-}
-
-
-/*アクセス経路*/
-div.access{
-    margin-top: 180px;
-}
-
-div.access p{
-    font-size: large;
-    margin-top: 25px;
-    border-bottom: 2px solid #000;
+div.explan2 h3{
+    color: white;
+    border: solid 3px #6091d3;/*線*/
+    background-color: cadetblue;
 }
 
 /*マップ*/
 .main iframe{
     display: block;
-    clear:both;
 }
 
-/* footer{
-    height: 150px;
+/*アクセス経路*/
+div.explan3{
+    margin-top: 80px;
+}
+
+div.explan3 h2{
+    background-color: cadetblue;
+    border: solid 1px #6091d3;
     color: white;
-    background-color: black;
-    text-align: center;
-    line-height: 70px;
-} */
+}
+
+div.explan3 p{
+    font-size: large;
+    margin-top: 25px;
+    border-bottom: 2px solid #000;
+}
+
+div.map{
+    border: solid 3px #aaaaaa;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width:80%;  
+}
 
 footer {
     margin-top: 3em;
