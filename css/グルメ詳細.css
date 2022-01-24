@@ -13,7 +13,7 @@ header {
     position: relative;
     width: 100%;
     height: 200px;        /*↓ヘッダー画像*/
-    background: linear-gradient(rgb(255, 180, 110), blue);
+    background: linear-gradient(rgb(255, 217, 181),  rgb(248, 1, 1));
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -87,7 +87,7 @@ form{
     text-decoration: none;
 }
 .menu a:hover{
-    color: rgb(255, 123, 0);
+    color: rgb(255, 247, 0);
     text-decoration: underline;
 }
 li {
@@ -186,7 +186,7 @@ footer {
     height: 50px;
     text-align: center;
     padding: 30px;
-    background: linear-gradient(#e63f50, red);
+    background: linear-gradient(rgb(255, 217, 181),  rgb(248, 1, 1));
     clear:both;
     color:white;
   }
