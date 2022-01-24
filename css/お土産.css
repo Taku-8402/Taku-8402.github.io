@@ -30,7 +30,7 @@ h1 {
 }
 
 header h1.title:hover{
-    color: rgb(0, 238, 255);
+    color: blue;
 }
 
 /* 検索ボタン*/
