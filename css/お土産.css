@@ -85,7 +85,7 @@ form{
     text-decoration: none;
 }
 .menu a:hover{
-    color: rgb(255, 123, 0);
+    color: blue;
     text-decoration: underline;
 }
 li {
@@ -101,9 +101,19 @@ li {
 
 div.main{
     background-color: white;
-    width: 80%;
+    width: 40%;
     margin: auto;
 }
+
+div.tname{
+    border-bottom: 2px solid rgb(0, 174, 255);
+    margin: 1.5em;
+}
+
+div.main h2{
+    margin-top: 50px;
+}
+
 
 /*詳細*/
 div.box {
@@ -117,7 +127,22 @@ div.explan p{
     margin: 1.5em;
 }
 
-.explan2 {
+.explan2{
+    width:30%;
+}
+
+div.explan2 p{
+    margin-top: 0.5em;
+    border-bottom: 1px solid rgb(118, 118, 118);
+}
+
+div.explan2 h3{
+    color: white;
+    border: solid 3px #6091d3;/*線*/
+    background-color: cadetblue;
+}
+
+/* .explan2 {
     position: relative;
     margin: 2em 0;
     padding: 0.7em 1em;
@@ -144,7 +169,7 @@ div.explan p{
 .explan2 p {
     margin: 0; 
     padding: 0;
-}
+} */
 /*---------------------------------*/
 
 /*詳細
