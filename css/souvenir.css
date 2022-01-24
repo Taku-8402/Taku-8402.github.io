@@ -29,11 +29,10 @@ header h1{
     left:1em;
     top:1em;
     transition: 0.3s;
-    -webkit-text-stroke: 1px rgb(55, 55, 55);
 }
 
 header h1.title:hover{
-    color: rgb(0, 238, 255);
+    color: blue;
 }
 
 /* ここまで */
