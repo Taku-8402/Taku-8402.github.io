@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<!--※↓の部分を替えて下さい!!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--↓ジャンル-->
+    <title>盛岡さんさ踊り</title>
+    <link rel="stylesheet" href="../css/イベント・行事.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.center').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <span><h1 class="title" onclick="location.href='../index.html'">いわナビ</h1></span>
+        <form>
+            <input id="searchKeyword" type="search" size="15" placeholder="キーワード">
+            <input id="searchButton" type="submit" value="検索">
+          </form>
+          
+          <script>
+          const SEARCH_URL = '../layouts/search/search.html';
+          
+          window.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.getElementById('searchButton');
+            const searchKeyword = document.getElementById('searchKeyword');
+          
+            // 検索ボタンのクリックで検索ページへジャンプ
+            searchButton.addEventListener('click', e => {
+              e.preventDefault();  // Prevent default form's behavior
+              const query = searchKeyword.value;
+              const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+              location.href = url;
+            });
+          });
+          </script>
+        <div class="menu">
+            <ul>
+                <li><a href="../list/sightseeing.html">観光スポット</a></li>
+                <li><a href="../list/gourmet.html">グルメ</a></li>
+                <li><a href="../list/listevent.html">イベント・行事</a></li>
+                <li><a href="../list/onsenlist.html">温泉・宿</a></li>
+                <li><a href="../list/souvenir.html">お土産</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--詳細部分-->
+    <div class="main"> <!--↓タイトル-->
+        <div class="line">
+        <h2>盛岡さんさ踊り</h2>
+        </div>
+        <div class="center"> <!--↓タイトル画像-->
+            <img src="../img/イベント・行事/盛岡さんさ踊り1.jpg" alt="盛岡さんさ踊り">
+            <img src="../img/イベント・行事/盛岡さんさ踊り2.jpg" alt="盛岡さんさ踊り">
+        </div>
+
+        <div class="box">
+            <div class="explan"> <!--↓タイトルの詳細-->
+                <p>夏空高く響き渡る太鼓の音に合わせて軽快なテンポで群雄するさんさ踊りは、</p>
+                <p>市民に古くから親しまれてきた盆踊りです。藩政時代から伝わるさんさ踊りが</p>
+                <p>内の目抜き通りで４日間繰り広げられます。現在では踊り手、笛、太鼓あわせ</p>
+                <p>て３万６千人ほどの群衆となります。力強いリズムにあわせて踊る、勇壮でエ</p>
+                <p>ネルギッシュな群舞は迫力満点。観客も自由に参加できます。</p>
+            </div>
+
+            <div class="explan2"> <!--↓タイトルの詳細-->
+                <h3>観光情報</h3>
+                <p>ジャンル<br>
+                    行事</p>
+                <p>所在地<br>
+                    盛岡市清水町14-12 盛岡商工会議所内</p>
+                <p>電話番号<br>
+                    019-624-5880</p>
+                <p>営業日<br>
+                    2022/8/1～2022/8/4</p>
+            </div>
+        </div>
+
+        <div class="map">
+                            <!--↓マップURL-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.020933730918!2d141.14608406459!3d39.694233279455666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f85762a7e4f0633%3A0x3b4f4520f32f9e74!2z55ub5bKh5ZWG5bel5Lya6K2w5omA!5e0!3m2!1sja!2sjp!4v1638240437965!5m2!1sja!2sjp"
+         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+        <div class="explan3">
+            <h2>[アクセス経路]</h2> <!--↓アクセス経路-->
+            <p>いわて花巻空港―ＪＲ盛岡駅：４５分</p>
+            <p>仙台宮城―盛岡：約１時間５０分</p>
+            <p>秋田中央―盛岡：約２時間１０分</p>
+        </div>
+
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <a href="http://line.me/R/msg/text/?シェアされます http://taku-8402.github.io/WebIwate.github.io/event/event6.html"><img src="../img/line.jpg" width="30" height="30"></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://taku-8402.github.io/WebIwate.github.io/event/event6.html" data-text="おすすめのイベント・行事" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+        © Iwanabi 2021
+    </footer>
+
+</body>
+
+</html>
